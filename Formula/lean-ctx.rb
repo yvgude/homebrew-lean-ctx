@@ -2,7 +2,7 @@ class LeanCtx < Formula
   desc "Hybrid Context Optimizer — Shell Hook + MCP Server with tree-sitter AST parsing"
   homepage "https://leanctx.com"
   url "https://github.com/yvgude/lean-ctx/archive/refs/tags/v1.6.1.tar.gz"
-  sha256 "1ce405930714ffe578e98a5c7a2cca84169e2fdccee36ddbee62d64516ac3401"
+  sha256 "54f731ab2daa1c275adfb185775f9f3f0b5e00830ffbd624b235140d1c7ed891"
   license "MIT"
 
   depends_on "rust" => :build
