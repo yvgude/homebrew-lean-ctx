@@ -1,8 +1,8 @@
 class LeanCtx < Formula
   desc "Context Intelligence Engine — Shell Hook + MCP Server with tree-sitter AST parsing"
   homepage "https://leanctx.com"
-  url "https://github.com/yvgude/lean-ctx/archive/refs/tags/v2.1.1.tar.gz"
-  sha256 "f097d90323f1b45bbbbafbc295308551659067d943a1ccd0e70305e81f729a05"
+  url "https://github.com/yvgude/lean-ctx/archive/refs/tags/v2.1.2.tar.gz"
+  sha256 "0e4d813979922758c28e472e1ac5e7d6c608342bbdceb4e53f8702980199ae80"
   license "MIT"
 
   depends_on "rust" => :build
