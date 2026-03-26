@@ -1,8 +1,8 @@
 class LeanCtx < Formula
-  desc "Hybrid Context Optimizer — Shell Hook + MCP Server with tree-sitter AST parsing"
+  desc "Context Intelligence Engine with CEP + CCP + TDD — 21 MCP tools, 90+ shell patterns, tree-sitter AST"
   homepage "https://leanctx.com"
-  url "https://github.com/yvgude/lean-ctx/archive/refs/tags/v2.1.3.tar.gz"
-  sha256 "adadef9378c44c1141f4b42acd752580fe17316b1b730f734dd9405c7d5192d1"
+  url "https://github.com/yvgude/lean-ctx/archive/refs/tags/v2.2.0.tar.gz"
+  sha256 "bd90f529bc05a010a6a8dda918e9af9ec8525242754dacdd466b6650c017f0ed"
   license "MIT"
 
   depends_on "rust" => :build
@@ -14,6 +14,6 @@ class LeanCtx < Formula
   end
 
   test do
-    assert_match "lean-ctx 2.1.3", shell_output("#{bin}/lean-ctx --version")
+    assert_match "lean-ctx 2.2.0", shell_output("#{bin}/lean-ctx --version")
   end
 end
