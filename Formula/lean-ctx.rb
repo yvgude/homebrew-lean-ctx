@@ -1,8 +1,8 @@
 class LeanCtx < Formula
   desc "Context Intelligence Engine with CEP + CCP + TDD — 21 MCP tools, 90+ shell patterns, tree-sitter AST"
   homepage "https://leanctx.com"
-  url "https://github.com/yvgude/lean-ctx/archive/refs/tags/v2.5.1.tar.gz"
-  sha256 "82888cc21fd8b0a385c704a28c706953969ae4432b119fdd26198a39ff780c17"
+  url "https://github.com/yvgude/lean-ctx/archive/refs/tags/v2.5.2.tar.gz"
+  sha256 "f3da2b0c2312ead6683438782d26c1aee4212b2dc81ee2e198aa2a9c932fd890"
   license "MIT"
 
   depends_on "rust" => :build
@@ -14,6 +14,6 @@ class LeanCtx < Formula
   end
 
   test do
-    assert_match "lean-ctx 2.5.1", shell_output("#{bin}/lean-ctx --version")
+    assert_match "lean-ctx 2.5.2", shell_output("#{bin}/lean-ctx --version")
   end
 end
