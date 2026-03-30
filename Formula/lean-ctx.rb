@@ -2,7 +2,7 @@ class LeanCtx < Formula
   desc "The Intelligence Layer for AI Coding — 24 intelligent tools, 90+ shell patterns, tree-sitter AST"
   homepage "https://leanctx.com"
   url "https://github.com/yvgude/lean-ctx/archive/refs/tags/v2.9.1.tar.gz"
-  sha256 "460ca5604e2874f492f8027ea1904f4e1e7adad00d6a786d217644a7bfa20aa1"
+  sha256 "9d82b4a4b9121285db88f14b5a2f6adc445584c7dd3b177294e1dd7882007612"
   license "MIT"
 
   depends_on "rust" => :build
