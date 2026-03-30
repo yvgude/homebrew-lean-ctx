@@ -1,8 +1,8 @@
 class LeanCtx < Formula
   desc "The Intelligence Layer for AI Coding — 24 intelligent tools, 90+ shell patterns, tree-sitter AST"
   homepage "https://leanctx.com"
-  url "https://github.com/yvgude/lean-ctx/archive/refs/tags/v2.9.3.tar.gz"
-  sha256 "4f6ca64fa9d94161b24f90d68bd40d677e328079db7228027b4ace36b28c98d9"
+  url "https://github.com/yvgude/lean-ctx/archive/refs/tags/v2.9.4.tar.gz"
+  sha256 "7560c3839d6f14974b41384d04171d246744b8c8a8dfe237aa30912c14690531"
   license "MIT"
 
   depends_on "rust" => :build
@@ -14,6 +14,6 @@ class LeanCtx < Formula
   end
 
   test do
-    assert_match "lean-ctx 2.9.3", shell_output("#{bin}/lean-ctx --version")
+    assert_match "lean-ctx 2.9.4", shell_output("#{bin}/lean-ctx --version")
   end
 end
