@@ -1,8 +1,8 @@
 class LeanCtx < Formula
   desc "The Context Engineering Layer for AI Coding — 28 intelligent tools, 90+ shell patterns, tree-sitter AST"
   homepage "https://leanctx.com"
-  url "https://github.com/yvgude/lean-ctx/releases/download/v2.21.1/lean-ctx-2.21.1-source.tar.gz"
-  sha256 "e493befbdd796494d81728108a616c7fbfd5d3b1f90bd9483a912cae017d3cf6"
+  url "https://github.com/yvgude/lean-ctx/releases/download/v2.21.2/lean-ctx-2.21.2-source.tar.gz"
+  sha256 "a3fae58315ae8e8d4a76e7c8e4c0d5af55028f9ca193d60526c152c803f139fc"
   license "MIT"
 
   depends_on "rust" => :build
@@ -14,6 +14,6 @@ class LeanCtx < Formula
   end
 
   test do
-    assert_match "lean-ctx 2.21.1", shell_output("#{bin}/lean-ctx --version")
+    assert_match "lean-ctx 2.21.2", shell_output("#{bin}/lean-ctx --version")
   end
 end
