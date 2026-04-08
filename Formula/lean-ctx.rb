@@ -2,7 +2,7 @@ class LeanCtx < Formula
   desc "The Context Engineering Layer for AI Coding — 28 intelligent tools, 90+ shell patterns, tree-sitter AST"
   homepage "https://leanctx.com"
   url "https://github.com/yvgude/lean-ctx/archive/refs/tags/v2.21.1.tar.gz"
-  sha256 "8d36d29a07eda3386141fcaa3a43243e1b3c41a97c10ebf03ee4ab6c9db674f7"
+  sha256 "e493befbdd796494d81728108a616c7fbfd5d3b1f90bd9483a912cae017d3cf6"
   license "MIT"
 
   depends_on "rust" => :build
