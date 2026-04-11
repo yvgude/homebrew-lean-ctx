@@ -14,6 +14,6 @@ class LeanCtx < Formula
   end
 
   test do
-    assert_match "lean-ctx 3.0.1")
+    assert_match "lean-ctx 3.0.1", shell_output("#{bin}/lean-ctx --version")
   end
 end
