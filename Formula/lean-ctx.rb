@@ -2,7 +2,7 @@ class LeanCtx < Formula
   desc "The Context Engineering Layer for AI Coding — 42 intelligent tools, 8 read modes, RRF-based token optimization"
   homepage "https://leanctx.com"
   url "https://github.com/yvgude/lean-ctx/releases/download/v3.2.7/lean-ctx-3.2.7-source.tar.gz"
-  sha256 "646061220dbf8f1c7f421b5401da64522e30eceb5a8eb9857820ef8b6e023f21"
+  sha256 "e24c4d096d8b77870ac4acb7963e17716419521704e6c8636a8a9c26e6c84b9d"
   license "Apache-2.0"
 
   depends_on "rust" => :build
