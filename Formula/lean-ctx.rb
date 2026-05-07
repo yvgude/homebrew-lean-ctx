@@ -1,5 +1,5 @@
 class LeanCtx < Formula
-  desc "The Context Engineering Layer for AI Coding — 42 intelligent tools, 8 read modes, RRF-based token optimization"
+  desc "The Context Engineering Layer for AI Coding — 56 MCP tools, 10 read modes, 95+ shell patterns"
   homepage "https://leanctx.com"
   url "https://github.com/yvgude/lean-ctx/releases/download/v3.5.2/lean-ctx-3.5.2-source.tar.gz"
   sha256 "92e5c5acb9310947977a21f66585d78077827edffa503177151b3e5bc31ba7a2"
