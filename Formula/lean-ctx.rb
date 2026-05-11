@@ -4,14 +4,14 @@ class LeanCtx < Formula
 <<<<<<< HEAD
 <<<<<<< HEAD
   url "https://github.com/yvgude/lean-ctx/releases/download/v3.5.17/lean-ctx-3.5.17-source.tar.gz"
-  sha256 "060642f46fd872cc6b9719be967a6274124fd7197df955b7e9915941f5b40c17"
+  sha256 "90eb3c40f06da4b3bfb533f7679902ef87ba131890d93da6266b97b7303b7303"
 =======
   url "https://github.com/yvgude/lean-ctx/releases/download/v3.5.17/lean-ctx-3.5.17-source.tar.gz"
-  sha256 "060642f46fd872cc6b9719be967a6274124fd7197df955b7e9915941f5b40c17"
+  sha256 "90eb3c40f06da4b3bfb533f7679902ef87ba131890d93da6266b97b7303b7303"
 >>>>>>> 58ea729 (3.5.15)
 =======
   url "https://github.com/yvgude/lean-ctx/releases/download/v3.5.17/lean-ctx-3.5.17-source.tar.gz"
-  sha256 "060642f46fd872cc6b9719be967a6274124fd7197df955b7e9915941f5b40c17"
+  sha256 "90eb3c40f06da4b3bfb533f7679902ef87ba131890d93da6266b97b7303b7303"
 >>>>>>> e52e70d (3.5.16)
   license "Apache-2.0"
 
