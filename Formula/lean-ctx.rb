@@ -2,7 +2,7 @@ class LeanCtx < Formula
   desc "The Context Engineering Layer for AI Coding — 58 MCP tools, 10 read modes, 95+ shell patterns"
   homepage "https://leanctx.com"
   url "https://github.com/yvgude/lean-ctx/releases/download/v3.5.19/lean-ctx-3.5.19-source.tar.gz"
-  sha256 "147ea8b38f991de69956272a15fc8f7ebd187147ae7361f455d202d5014642fc"
+  sha256 "76110ae7c1f71e581c31e486b9d550e5e56e68d6b02ba8b424d34468ad2027a9"
   license "Apache-2.0"
 
   depends_on "rust" => :build
