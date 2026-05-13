@@ -3,10 +3,10 @@ class LeanCtx < Formula
   homepage "https://leanctx.com"
 <<<<<<< HEAD
   url "https://github.com/yvgude/lean-ctx/releases/download/v3.5.24/lean-ctx-3.5.24-source.tar.gz"
-  sha256 "342b27adb456ea0d692019be624d57f0198f35dea51f3fe8732d624b326a427c"
+  sha256 "4a35ecefc9133afd761c4d5be2802a5d6c00de2e7722b74038a5be6db8318f52"
 =======
   url "https://github.com/yvgude/lean-ctx/releases/download/v3.5.24/lean-ctx-3.5.24-source.tar.gz"
-  sha256 "342b27adb456ea0d692019be624d57f0198f35dea51f3fe8732d624b326a427c"
+  sha256 "4a35ecefc9133afd761c4d5be2802a5d6c00de2e7722b74038a5be6db8318f52"
 >>>>>>> 77cf39e (3.5.23)
   license "Apache-2.0"
 
