@@ -4,6 +4,11 @@ class LeanCtx < Formula
   version "3.8.12"
   license "Apache-2.0"
 
+  # Semantic search (ctx_semantic_search / embeddings) loads libonnxruntime at
+  # runtime; the engine resolves it from the Homebrew prefix lib dir. Without
+  # this dependency the dylib is absent and ORT init fails. See issue #544.
+  depends_on "onnxruntime"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/yvgude/lean-ctx/releases/download/v3.8.12/lean-ctx-aarch64-apple-darwin.tar.gz"
