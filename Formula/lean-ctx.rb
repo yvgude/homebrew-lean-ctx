@@ -1,7 +1,7 @@
 class LeanCtx < Formula
   desc "The Context Engineering Layer for AI Coding — 71 MCP tools, 10 read modes, 95+ shell patterns"
   homepage "https://leanctx.com"
-  version "3.9.2"
+  version "3.9.3"
   license "Apache-2.0"
 
   # Semantic search (ctx_semantic_search / embeddings) loads
@@ -12,21 +12,21 @@ class LeanCtx < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yvgude/lean-ctx/releases/download/v3.9.2/lean-ctx-aarch64-apple-darwin.tar.gz"
-      sha256 "8c6fccfcd9da984590a169981a6e75c7a8a1410fd4ee34a6dc278b864d9755cd"
+      url "https://github.com/yvgude/lean-ctx/releases/download/v3.9.3/lean-ctx-aarch64-apple-darwin.tar.gz"
+      sha256 "2adf67848020a198fd08eeeafc8957b83cf793b42719a196ea4b3a40a2597eb8"
     else
-      url "https://github.com/yvgude/lean-ctx/releases/download/v3.9.2/lean-ctx-x86_64-apple-darwin.tar.gz"
-      sha256 "113d6aefdd648b1a9527e6ad675d685cceeb793668c52557f65f94825531d000"
+      url "https://github.com/yvgude/lean-ctx/releases/download/v3.9.3/lean-ctx-x86_64-apple-darwin.tar.gz"
+      sha256 "d16aa4254f0e5ad0dc34ea19a6bc26b85a4a099b0f623f0ef1a1c97e62f7b69e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yvgude/lean-ctx/releases/download/v3.9.2/lean-ctx-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0449cb07f7ddcf160004d190bc92e4ce9bd6f308f68b3ef8bc500fa803ede2a7"
+      url "https://github.com/yvgude/lean-ctx/releases/download/v3.9.3/lean-ctx-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "47b74fa144b6b5820acc9e206544b00f3b7a93f322db5fb2dced6ee78639b212"
     else
-      url "https://github.com/yvgude/lean-ctx/releases/download/v3.9.2/lean-ctx-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f9466a9406492e6250a4f14d27d4f045ba37d7e03f8448f2ae0cb9b4278d0c42"
+      url "https://github.com/yvgude/lean-ctx/releases/download/v3.9.3/lean-ctx-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "091d76066c618068261f8b7e94b528f098278abdc572a2710d4d0ecb8aec5453"
     end
   end
 
@@ -35,6 +35,6 @@ class LeanCtx < Formula
   end
 
   test do
-    assert_match "lean-ctx 3.9.2", shell_output("#{bin}/lean-ctx --version")
+    assert_match "lean-ctx 3.9.3", shell_output("#{bin}/lean-ctx --version")
   end
 end
