@@ -13,20 +13,20 @@ class LeanCtx < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/yvgude/lean-ctx/releases/download/v3.9.14/lean-ctx-aarch64-apple-darwin.tar.gz"
-      sha256 "2b3836e03eb5ecff5da58486e295abfe4f191a835fefecbd174f632d740fa87e"
+      sha256 "2deeac199391bb12d310950d67e6650943c976a6ff17a3190e10803a5640e827"
     else
       url "https://github.com/yvgude/lean-ctx/releases/download/v3.9.14/lean-ctx-x86_64-apple-darwin.tar.gz"
-      sha256 "4ef5e6ffff27af40fd6b086272fbb8417678f1ab32830782d4921e3a5f337f02"
+      sha256 "aae5e00600c3466a855ad85bf9b9a497c257326cf8a04898781c69a58eedb2c2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/yvgude/lean-ctx/releases/download/v3.9.14/lean-ctx-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e257ab434a2c396ae8ba18f227fc1be9e4b256e135b27522cf9770104b944500"
+      sha256 "5f97661033b79b520a9d9b9fd4510dfeec01d9ea42dae7ecbfbf3c5cf7970123"
     else
       url "https://github.com/yvgude/lean-ctx/releases/download/v3.9.14/lean-ctx-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4e905394f2607e78bd09e9e93b0884a2697426ead6383c8e7907b8cabf770d79"
+      sha256 "07e8ccf86879c18d2a7f446113fd408702ae435f3be99c7b3f9b91d1fda2afea"
     end
   end
 
