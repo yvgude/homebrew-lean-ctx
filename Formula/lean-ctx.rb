@@ -1,14 +1,8 @@
 class LeanCtx < Formula
-  desc "The Context Engineering Layer for AI Coding — 71 MCP tools, 10 read modes, 95+ shell patterns"
+  desc "The Context Engineering Layer for AI Coding — 82 MCP tools, 10 read modes, 95+ shell patterns"
   homepage "https://leanctx.com"
   version "3.9.17"
   license "Apache-2.0"
-
-  # Semantic search (ctx_semantic_search / embeddings) loads
-  # libonnxruntime at runtime; the engine resolves it from the
-  # Homebrew prefix lib dir. Without this dependency the dylib is
-  # absent and ORT init fails. See issue #544.
-  depends_on "onnxruntime"
 
   on_macos do
     if Hardware::CPU.arm?
