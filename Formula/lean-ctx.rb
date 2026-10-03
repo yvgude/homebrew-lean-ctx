@@ -1,5 +1,5 @@
 class LeanCtx < Formula
-    desc "The Context Engineering Layer for AI Coding — MCP tools, 10 read modes, 95+ shell patterns"
+  desc "Local engine for the LeanCTX Context Gateway for AI Systems"
   homepage "https://leanctx.com"
   version "3.10.5"
   license "Apache-2.0"
