@@ -1,6 +1,10 @@
 # Homebrew Tap for LeanCTX
 
-Hybrid Context Optimizer — Shell Hook + MCP Server for AI coding tools.
+**Context Gateway for AI Systems. Control what your AI can see.**
+
+This tap installs LeanCTX Engine, the local open-source component of LeanCTX.
+Select task-relevant context, apply supported controls, and inspect observed
+context operations through CLI, MCP, hooks, and supported proxy integrations.
 
 ## Installation
 
