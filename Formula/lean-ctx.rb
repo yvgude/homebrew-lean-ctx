@@ -1,7 +1,7 @@
 class LeanCtx < Formula
   desc "Local engine for the LeanCTX Context Gateway for AI Systems"
   homepage "https://leanctx.com"
-  version "3.11.2"
+  version "3.11.3"
   license "Apache-2.0"
 
   # Semantic search (ctx_semantic_search / embeddings) loads
@@ -12,21 +12,21 @@ class LeanCtx < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yvgude/lean-ctx/releases/download/v3.11.2/lean-ctx-aarch64-apple-darwin.tar.gz"
-      sha256 "46c33221c6b36c673aa8b39a112c7d3636756c5ef98f1788f899120bcfc6dad1"
+      url "https://github.com/yvgude/lean-ctx/releases/download/v3.11.3/lean-ctx-aarch64-apple-darwin.tar.gz"
+      sha256 "07b2d253631b74a60e6f93894b0f036e0c97aa6872bd9bf0d852a156792d782b"
     else
-      url "https://github.com/yvgude/lean-ctx/releases/download/v3.11.2/lean-ctx-x86_64-apple-darwin.tar.gz"
-      sha256 "6309b91ec3dbf52eaec6f85d56fdcb72ffd8e4e41ae8bda0d485eea5ca8f68c5"
+      url "https://github.com/yvgude/lean-ctx/releases/download/v3.11.3/lean-ctx-x86_64-apple-darwin.tar.gz"
+      sha256 "42e90562dd197099150035554f75bc89a35a6f7091ac54aaa14686e5ad712258"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yvgude/lean-ctx/releases/download/v3.11.2/lean-ctx-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "554fb98577d537a45809f6e0c5ddaa41891c8033925e5a811f84dc271752f27f"
+      url "https://github.com/yvgude/lean-ctx/releases/download/v3.11.3/lean-ctx-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "da7963d875ab9fa54fca14b7f778fbe23cf017d2f12fda0b04ba5dd64df6701f"
     else
-      url "https://github.com/yvgude/lean-ctx/releases/download/v3.11.2/lean-ctx-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "25153e740fb217c43f4033e3751d9c6e4aec60d97f410ec0396b418e01d313d8"
+      url "https://github.com/yvgude/lean-ctx/releases/download/v3.11.3/lean-ctx-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fbdbb345fa005708a947538b052745027402b9c63e880fc7888512e726e108ef"
     end
   end
 
@@ -35,6 +35,6 @@ class LeanCtx < Formula
   end
 
   test do
-    assert_match "lean-ctx 3.11.2", shell_output("#{bin}/lean-ctx --version")
+    assert_match "lean-ctx 3.11.3", shell_output("#{bin}/lean-ctx --version")
   end
 end
