@@ -1,7 +1,7 @@
 class LeanCtx < Formula
   desc "Local engine for the LeanCTX Context Gateway for AI Systems"
   homepage "https://leanctx.com"
-  version "3.12.2"
+  version "3.12.3"
   # Engine: Apache-2.0. Bundled LeanCTX Cockpit binary: LeanCTX Cockpit
   # EULA (LicenseRef-LeanCTX-Cockpit-EULA), which SPDX cannot express.
   license all_of: ["Apache-2.0", :cannot_represent]
@@ -14,40 +14,40 @@ class LeanCtx < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.2/lean-ctx-aarch64-apple-darwin.tar.gz"
-      sha256 "74fdf707eca87761c818c2caae2805b990c83a5fb459d7e7de541e525b2afadc"
+      url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.3/lean-ctx-aarch64-apple-darwin.tar.gz"
+      sha256 "867aed6411d113af26d60a6c6bae91db24b52c6da2b6942932953654d43542df"
 
       resource "cockpit" do
-        url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.2/lean-ctx-cockpit-aarch64-apple-darwin.tar.gz"
-        sha256 "d191dc84f930d658882a16c7cf327afbe160fe7c0a4a8850c44f0ee2f50af568"
+        url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.3/lean-ctx-cockpit-aarch64-apple-darwin.tar.gz"
+        sha256 "7d1b53fd731b087a425c4a58a38f56dcf479c4117d286c3f766d54b775819d2c"
       end
     else
-      url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.2/lean-ctx-x86_64-apple-darwin.tar.gz"
-      sha256 "f7787f1f574720d0f25d4c63b586961d373cad8e2459643b13ef05cdf87f90a8"
+      url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.3/lean-ctx-x86_64-apple-darwin.tar.gz"
+      sha256 "8c25c1a13cee0a81572d22c86fcd5ffb072ac84aba33ac4543ad98d8a3eeaec7"
 
       resource "cockpit" do
-        url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.2/lean-ctx-cockpit-x86_64-apple-darwin.tar.gz"
-        sha256 "d920d5bf0b8c6d3648fba44379811c4f40a172a316520c5cfdec7112f3552106"
+        url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.3/lean-ctx-cockpit-x86_64-apple-darwin.tar.gz"
+        sha256 "7584b1155e03beb155361aa9a0b516be35d5180cf5aaf73c478f8bf86aa55a5b"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.2/lean-ctx-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "aa58bca469eb44a2bfa5b1e8bab5d5164deac1a28e75343e745aab05142c3b4f"
+      url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.3/lean-ctx-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6bcc6529f56b5517f6e41b7f3e6887f1144f7cd577bd3998fb894383c4b0c2b9"
 
       resource "cockpit" do
-        url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.2/lean-ctx-cockpit-aarch64-unknown-linux-gnu.tar.gz"
-        sha256 "ca6d3eed3d7c98570006f2edb095ab0f02f88195a1303c6ce501a0cbd6b141ed"
+        url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.3/lean-ctx-cockpit-aarch64-unknown-linux-gnu.tar.gz"
+        sha256 "543551fb4d38cb07db52d031f5f68757dfa8a967d4533e955b0d620d7dfe9aa3"
       end
     else
-      url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.2/lean-ctx-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "501a4c209e92e6e2345ef875440944aa046d86b16a8c2f2df8099f234a75a078"
+      url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.3/lean-ctx-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1adaf10972220d01f13a5ce42925bcebef6b47354ffbaa194995e555924b9e39"
 
       resource "cockpit" do
-        url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.2/lean-ctx-cockpit-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "4890b5897472a73c94da0148806be7407f081cd1c6fb821e73bcc4cc8a2bb3fe"
+        url "https://github.com/yvgude/lean-ctx/releases/download/v3.12.3/lean-ctx-cockpit-x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "a0fcf2183cbb675c77d10b7c79a8d649cdad3304ed3a34fe1357d0d6c863ee28"
       end
     end
   end
@@ -71,7 +71,7 @@ class LeanCtx < Formula
   end
 
   test do
-    assert_match "lean-ctx 3.12.2", shell_output("#{bin}/lean-ctx --version")
+    assert_match "lean-ctx 3.12.3", shell_output("#{bin}/lean-ctx --version")
     assert_path_exists share/"lean-ctx/cockpit/manifest.json"
   end
 end
